@@ -7,7 +7,7 @@ export default function Footer() {
       <div className="container">
         <div className="footer__grid">
           <div className="footer__brand">
-            <div className="footer__mark">VOS</div>
+            <img src="/logo.png" alt="VOS" className="footer__logo-img" />
             <p className="footer__tagline">
               Voorlichting, ondersteuning en scholing voor de eerstelijns gezondheidszorg.
               Inhoudelijk sterk, direct toepasbaar.

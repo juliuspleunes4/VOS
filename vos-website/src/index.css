@@ -2,8 +2,8 @@
   --green-deep: #1A3828;
   --green-mid: #24503A;
   --green-hover: #2D5F46;
-  --brass: #9E7340;
-  --brass-light: #B98A54;
+  --brass: #B0552F;
+  --brass-light: #C4683F;
   --cream: #F7F3EC;
   --cream-dark: #EDE7D8;
   --white: #FFFFFF;
@@ -99,7 +99,7 @@ img { max-width: 100%; display: block; }
   color: var(--brass);
   margin-bottom: 0.75rem;
 }
-.section--dark .label { color: #C49A60; }
+.section--dark .label { color: #D4784A; }
 
 /* Section intro text */
 .intro {
@@ -174,7 +174,7 @@ img { max-width: 100%; display: block; }
   background: var(--green-deep);
   padding: 9rem 0 4.5rem;
 }
-.page-header .label { color: #C49A60; }
+.page-header .label { color: #D4784A; }
 .page-header h1 {
   color: var(--white);
   margin-bottom: 1rem;

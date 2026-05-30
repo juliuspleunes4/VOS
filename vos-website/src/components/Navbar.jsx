@@ -18,8 +18,7 @@ export default function Navbar() {
     <header className={`navbar${scrolled ? ' navbar--scrolled' : ''}`}>
       <div className="navbar__inner container">
         <Link to="/" className="navbar__logo" onClick={closeMenu}>
-          <span className="navbar__logo-vos">VOS</span>
-          <span className="navbar__logo-tagline">Voorlichting · Ondersteuning · Scholing</span>
+          <img src="/logo.png" alt="VOS" className="navbar__logo-img" />
         </Link>
 
         <button

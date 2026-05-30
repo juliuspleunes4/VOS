@@ -51,7 +51,7 @@
   font-weight: 600;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: #C49A60;
+  color: #D4784A;
   margin-bottom: 1.25rem;
   padding-bottom: 1.25rem;
   border-bottom: 1px solid rgba(255,255,255,0.08);
@@ -77,7 +77,7 @@
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #C49A60;
+  background: #D4784A;
   flex-shrink: 0;
 }
 
@@ -174,7 +174,7 @@
   justify-content: center;
   background: rgba(255,255,255,0.08);
   border-radius: var(--radius-sm);
-  color: #C49A60;
+  color: #D4784A;
   flex-shrink: 0;
   margin-top: 0.1rem;
 }
