@@ -7,6 +7,8 @@ import Home from './pages/Home';
 import OverVOS from './pages/OverVOS';
 import Diensten from './pages/Diensten';
 import Contact from './pages/Contact';
+import Privacyverklaring from './pages/Privacyverklaring';
+import Klachtenregeling from './pages/Klachtenregeling';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -26,6 +28,8 @@ function App() {
         <Route path="/over-vos" element={<OverVOS />} />
         <Route path="/diensten" element={<Diensten />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/privacyverklaring" element={<Privacyverklaring />} />
+        <Route path="/klachtenregeling" element={<Klachtenregeling />} />
         <Route path="*" element={<Home />} />
       </Routes>
       <Footer />

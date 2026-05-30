@@ -74,50 +74,66 @@
 .navbar__toggle {
   display: none;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
   gap: 5px;
   background: none;
   border: none;
   cursor: pointer;
-  padding: 0.4rem;
+  padding: 0;
   width: 44px;
   height: 44px;
+  flex-shrink: 0;
 }
 .navbar__toggle span {
   display: block;
+  width: 20px;
   height: 1.5px;
-  background: rgba(255,255,255,0.8);
-  border-radius: 1px;
-  transition: transform 0.2s, opacity 0.2s;
+  background: rgba(255,255,255,0.85);
+  border-radius: 2px;
+  transition: transform 0.22s ease, opacity 0.22s ease;
 }
 .navbar__toggle--open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
-.navbar__toggle--open span:nth-child(2) { opacity: 0; }
+.navbar__toggle--open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
 .navbar__toggle--open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
 
 @media (max-width: 740px) {
   .navbar__toggle { display: flex; }
+
   .navbar__nav {
     display: none;
     position: absolute;
     top: 64px; left: 0; right: 0;
-    background: #122A1E;
+    background: var(--green-deep);
     flex-direction: column;
     align-items: stretch;
-    padding: 0.75rem 1.5rem 1.25rem;
+    padding: 0.5rem 0 1rem;
     gap: 0;
     border-top: 1px solid rgba(255,255,255,0.08);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.3);
   }
   .navbar__nav--open { display: flex; }
+
   .navbar__nav a {
-    padding: 0.7rem 0.25rem;
-    border-bottom: 1px solid rgba(255,255,255,0.06);
+    font-size: 0.95rem;
+    font-weight: 500;
+    padding: 0.85rem 1.5rem;
     border-radius: 0;
+    border-bottom: none;
+    color: rgba(255,255,255,0.72);
   }
+  .navbar__nav a:hover,
+  .navbar__nav a.active {
+    color: var(--white);
+    background: rgba(255,255,255,0.06);
+  }
+
   .navbar__cta {
-    margin-left: 0 !important;
-    margin-top: 0.6rem;
+    margin: 0.75rem 1.5rem 0 !important;
     text-align: center;
+    justify-content: center;
     border-radius: var(--radius-sm) !important;
-    border-bottom: none !important;
+    font-size: 0.875rem !important;
+    padding: 0.7rem 1.25rem !important;
   }
 }
