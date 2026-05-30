@@ -10,7 +10,7 @@ const diensten = [
     id: 'scholing',
     Icon: BookOpen,
     label: 'Nascholing',
-    title: 'Scholing & nascholing',
+    title: 'Scholing & nascholing.',
     intro: 'Geaccrediteerde nascholing voor zorgprofessionals. Inhoudelijk sterk, direct toepasbaar.',
     body: [
       'VOS verzorgt nascholing voor huisartsen, POH\'s en praktijkassistentes, zowel individueel als in groepsverband. De scholingen sluiten aan op de dagelijkse praktijk en zijn gericht op directe toepasbaarheid.',
@@ -29,7 +29,7 @@ const diensten = [
     id: 'lezingen',
     Icon: Mic,
     label: 'Lezingen',
-    title: 'Lezingen & workshops',
+    title: 'Lezingen & workshops.',
     intro: 'Interactieve lezingen en workshops over gezondheidszorgonderwerpen, voor professionals en publiek.',
     body: [
       'VOS verzorgt lezingen en workshops op maat, afgestemd op de vraag van de opdrachtgever. De aanpak is interactief en gericht op betrokkenheid van de deelnemers.',
@@ -47,7 +47,7 @@ const diensten = [
     id: 'praktijkbeoordeling',
     Icon: ClipboardList,
     label: 'Praktijkbeoordeling',
-    title: 'Praktijkbeoordeling chronische zorg',
+    title: 'Praktijkbeoordeling chronische zorg.',
     intro: 'Een integraal traject: beoordeling, verbeterplan en scholing in één samenhangende aanpak.',
     body: [
       'Huisartspraktijken worden beoordeeld op indicatoren voor chronische zorg, met bijzondere aandacht voor hart- en vaatziekten en CVRM. Na de beoordeling volgt een verbeterplan en een verbetergesprek.',
@@ -68,7 +68,7 @@ const diensten = [
     id: 'intervisie',
     Icon: Users,
     label: "Intervisie POH's",
-    title: "Intervisie voor POH's",
+    title: "Intervisie voor POH's.",
     intro: "Begeleide intervisie voor praktijkondersteuners: reflectie, casuïstiek en professionele ontwikkeling.",
     body: [
       "VOS begeleidt intervisiegroepen voor praktijkondersteuners (POH's somatiek). Intervisie helpt om casuïstiek te bespreken, van elkaar te leren en professioneel te groeien.",
@@ -86,7 +86,7 @@ const diensten = [
     id: 'zorggroepen',
     Icon: Network,
     label: 'Zorggroepen',
-    title: 'Ondersteuning zorggroepen',
+    title: 'Ondersteuning zorggroepen.',
     intro: 'Procesondersteuning en advies voor zorggroepen op het gebied van CVRM en ketenzorg.',
     body: [
       'VOS ondersteunt zorggroepen bij de organisatie en verbetering van de ketenzorg, met name op het gebied van hart- en vaatziekten en cardiovasculair risicomanagement.',
@@ -104,7 +104,7 @@ const diensten = [
     id: 'publieksvoorlichting',
     Icon: Megaphone,
     label: 'Publieksvoorlichting',
-    title: 'Publieksvoorlichting',
+    title: 'Publieksvoorlichting.',
     intro: 'Toegankelijke voorlichting voor burgers en patiënten, in opdracht van welzijnsorganisaties of gemeenten.',
     body: [
       'VOS verzorgt publieksvoorlichting voor welzijnsorganisaties, patiëntengroepen en andere maatschappelijke organisaties. De voorlichting is laagdrempelig, interactief en gericht op bewustwording.',
@@ -131,11 +131,11 @@ export default function Diensten() {
   }, [hash]);
 
   return (
-    <main>
+    <main id="main-content">
       <section className="page-header">
         <div className="container">
           <span className="label">Aanbod</span>
-          <h1>Diensten</h1>
+          <h1>Diensten.</h1>
           <p className="page-header__sub">
             Een volledig palet aan scholing, advies en voorlichting voor de eerstelijns gezondheidszorg.
             Altijd praktijkgericht, altijd inhoudelijk sterk.

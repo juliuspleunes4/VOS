@@ -24,14 +24,16 @@ export default function Navbar() {
         <button
           className={`navbar__toggle${menuOpen ? ' navbar__toggle--open' : ''}`}
           onClick={() => setMenuOpen(o => !o)}
-          aria-label="Menu openen"
+          aria-label={menuOpen ? 'Menu sluiten' : 'Menu openen'}
+          aria-expanded={menuOpen}
+          aria-controls="main-nav"
         >
           <span />
           <span />
           <span />
         </button>
 
-        <nav className={`navbar__nav${menuOpen ? ' navbar__nav--open' : ''}`}>
+        <nav id="main-nav" className={`navbar__nav${menuOpen ? ' navbar__nav--open' : ''}`} aria-label="Hoofdnavigatie">
           <NavLink to="/" end onClick={closeMenu}>Home</NavLink>
           <NavLink to="/over-vos" onClick={closeMenu}>Over VOS</NavLink>
           <NavLink to="/diensten" onClick={closeMenu}>Diensten</NavLink>

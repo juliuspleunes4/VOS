@@ -19,11 +19,11 @@ export default function Contact() {
   const set = e => setForm(f => ({ ...f, [e.target.name]: e.target.value }));
 
   return (
-    <main>
+    <main id="main-content">
       <section className="page-header">
         <div className="container">
           <span className="label">Contact</span>
-          <h1>Contact &amp; offerte aanvragen</h1>
+          <h1>Contact &amp; offerte aanvragen.</h1>
           <p className="page-header__sub">
             Stel uw vraag, vraag een offerte aan of plan een vrijblijvend kennismakingsgesprek.
           </p>
@@ -34,7 +34,7 @@ export default function Contact() {
         <div className="container contact__grid">
           {/* Formulier */}
           <div>
-            <h2 style={{ marginBottom: '0.5rem' }}>Stuur een bericht</h2>
+            <h2 style={{ marginBottom: '0.5rem' }}>Stuur een bericht.</h2>
             <p className="contact__sub">
               Vul het formulier in en geef aan waar uw interesse naar uitgaat.
               U ontvangt binnen twee werkdagen een reactie.

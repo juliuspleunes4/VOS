@@ -13,13 +13,24 @@
   --border: #D4CCB8;
   --border-light: #EAE4D6;
 
-  --font-display: 'Playfair Display', Georgia, serif;
-  --font-body: 'Source Sans 3', system-ui, sans-serif;
+  --font-display: 'Figtree', system-ui, sans-serif;
+  --font-body: 'Noto Sans', system-ui, sans-serif;
 
   --radius-sm: 2px;
   --radius: 4px;
   --shadow-sm: 0 1px 4px rgba(26, 56, 40, 0.06);
   --shadow-md: 0 4px 16px rgba(26, 56, 40, 0.10);
+  --shadow-lg: 0 10px 15px rgba(0,0,0,0.1);
+
+  --space-xs:  0.25rem;
+  --space-sm:  0.5rem;
+  --space-md:  1rem;
+  --space-lg:  1.5rem;
+  --space-xl:  2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+
+  --focus-ring: 0 0 0 3px rgba(176, 85, 47, 0.45);
 }
 
 *, *::before, *::after {
@@ -29,6 +40,11 @@
 }
 
 html { scroll-behavior: smooth; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
+}
 
 body {
   font-family: var(--font-body);

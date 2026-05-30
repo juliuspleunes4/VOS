@@ -4,11 +4,11 @@ import './OverVOS.css';
 
 export default function OverVOS() {
   return (
-    <main>
+    <main id="main-content">
       <section className="page-header">
         <div className="container">
           <span className="label">Over ons</span>
-          <h1>Over VOS</h1>
+          <h1>Over VOS.</h1>
           <p className="page-header__sub">
             Vos Voorlichting Ondersteuning Scholing, opgericht in 2020 door Jeanette Caljouw-Vos
             vanuit de wens om de eerstelijns gezondheidszorg te versterken.
@@ -21,7 +21,7 @@ export default function OverVOS() {
         <div className="container over__intro">
           <div className="over__text">
             <span className="label">Wie is Jeanette</span>
-            <h2>Kaderarts, docent en praktijkkenner</h2>
+            <h2>Kaderarts, docent en praktijkkenner.</h2>
             <p>
               Jeanette Caljouw-Vos is kaderarts hart- en vaatziekten, ingeschreven bij de CHBB
               (Commissie Huisartsgeneeskunde Bijscholing en Beoordeling). Ze heeft de NHG-kaderopleiding
@@ -82,16 +82,16 @@ export default function OverVOS() {
       <section className="section section--dark">
         <div className="container">
           <span className="label">Missie</span>
-          <h2 style={{ marginBottom: '0.85rem' }}>Waarom VOS bestaat</h2>
+          <h2 style={{ marginBottom: '0.85rem' }}>Waarom VOS bestaat.</h2>
           <p className="intro">
             VOS is opgericht vanuit één overtuiging: de kwaliteit van de eerstelijns gezondheidszorg
             staat of valt met goed opgeleide, goed ondersteunde zorgprofessionals.
           </p>
           <div className="over__waarden">
             {[
-              { nr: '01', title: 'De mens centraal',            text: 'Achter elke indicatorscore zit een patiënt. Scholing en begeleiding staan altijd in dienst van betere zorg voor de mensen die dat nodig hebben.' },
-              { nr: '02', title: 'Kwaliteit van eerstelijnszorg', text: 'De huisartsenpraktijk is de toegangspoort tot de zorg. Investeren in de kwaliteit van de eerstelijn is investeren in het hele zorgstelsel.' },
-              { nr: '03', title: 'Praktische toepasbaarheid',   text: 'Kennis heeft waarde als je er de volgende dag mee aan de slag kunt. Toepasbaarheid staat voorop.' },
+              { nr: '01', title: 'De mens centraal.',            text: 'Achter elke indicatorscore zit een patiënt. Scholing en begeleiding staan altijd in dienst van betere zorg voor de mensen die dat nodig hebben.' },
+              { nr: '02', title: 'Kwaliteit van eerstelijnszorg.', text: 'De huisartsenpraktijk is de toegangspoort tot de zorg. Investeren in de kwaliteit van de eerstelijn is investeren in het hele zorgstelsel.' },
+              { nr: '03', title: 'Praktische toepasbaarheid.',   text: 'Kennis heeft waarde als je er de volgende dag mee aan de slag kunt. Toepasbaarheid staat voorop.' },
             ].map(w => (
               <div key={w.nr} className="waarde">
                 <span className="waarde__nr">{w.nr}</span>
@@ -108,7 +108,7 @@ export default function OverVOS() {
         <div className="container over__betrokken">
           <div>
             <span className="label">Maatschappelijke betrokkenheid</span>
-            <h2>Betrokken bij de positie van de huisarts</h2>
+            <h2>Betrokken bij de positie van de huisarts.</h2>
             <p>
               Jeanette volgt de ontwikkelingen in het zorgstelsel op de voet en deelt haar betrokkenheid
               via initiatieven zoals <strong>#HelpDeHuisartsVooruit</strong>. Die brede blik maakt haar

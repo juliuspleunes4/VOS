@@ -221,9 +221,10 @@
 .home__quote p {
   font-family: var(--font-display);
   font-style: italic;
-  font-size: 1.15rem;
+  font-size: 1.1rem;
+  font-weight: 500;
   color: var(--green-deep);
-  line-height: 1.6;
+  line-height: 1.65;
   margin-bottom: 0.85rem;
 }
 .home__quote footer {
