@@ -1,0 +1,170 @@
+.contact__grid {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 5rem;
+  align-items: start;
+}
+
+.contact__sub {
+  color: var(--text-muted);
+  margin-bottom: 2rem;
+  font-size: 0.95rem;
+  font-weight: 300;
+}
+
+/* Form */
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.form-group label {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-mid);
+  font-family: var(--font-body);
+  letter-spacing: 0.01em;
+}
+.req { color: var(--brass); }
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: var(--text);
+  background: var(--white);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 0.65rem 0.9rem;
+  line-height: 1.5;
+  transition: border-color 0.14s, box-shadow 0.14s;
+  width: 100%;
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--green-mid);
+  box-shadow: 0 0 0 3px rgba(36, 80, 58, 0.1);
+}
+.form-group input::placeholder,
+.form-group textarea::placeholder { color: #bbb; }
+.form-group textarea { resize: vertical; min-height: 130px; }
+.form-group select {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='7' viewBox='0 0 10 7'%3E%3Cpath fill='%237A746C' d='M5 7L0 0h10z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.9rem center;
+  padding-right: 2.5rem;
+  cursor: pointer;
+}
+
+.form-privacy {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+  font-weight: 300;
+}
+
+/* Success */
+.contact__ok {
+  border: 1px solid #b8d9c4;
+  background: #f0f8f4;
+  border-radius: var(--radius);
+  padding: 2.5rem;
+  text-align: center;
+}
+.contact__ok-mark {
+  width: 44px; height: 44px;
+  background: var(--green-mid);
+  color: var(--white);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.1rem; font-weight: 700;
+  margin: 0 auto 1rem;
+}
+.contact__ok h3 { margin-bottom: 0.5rem; }
+.contact__ok p { color: var(--text-muted); font-size: 0.9rem; max-width: 380px; margin: 0 auto; font-weight: 300; }
+
+/* Info sidebar */
+.contact__info {
+  position: sticky;
+  top: 84px;
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius);
+  padding: 2rem;
+}
+
+.contact__info-row {
+  display: flex;
+  gap: 0.9rem;
+  align-items: flex-start;
+  margin-bottom: 1.25rem;
+}
+.contact__info-icon {
+  width: 30px; height: 30px;
+  display: flex; align-items: center; justify-content: center;
+  background: var(--cream-dark);
+  border-radius: var(--radius-sm);
+  color: var(--green-deep);
+  flex-shrink: 0;
+}
+.contact__info-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin-bottom: 0.2rem;
+  font-family: var(--font-body);
+}
+.contact__info-row > div:last-child {
+  font-size: 0.875rem;
+  color: var(--text);
+  line-height: 1.55;
+}
+.contact__info-row a {
+  color: var(--brass);
+  font-size: 0.875rem;
+}
+
+.contact__table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.82rem;
+}
+.contact__table th {
+  text-align: left;
+  font-weight: 500;
+  color: var(--text-muted);
+  padding: 0.45rem 0.75rem 0.45rem 0;
+  border-bottom: 1px solid var(--border-light);
+  white-space: nowrap;
+  vertical-align: top;
+}
+.contact__table td {
+  padding: 0.45rem 0;
+  color: var(--text);
+  border-bottom: 1px solid var(--border-light);
+}
+.contact__table tr:last-child th,
+.contact__table tr:last-child td { border-bottom: none; }
+
+@media (max-width: 860px) {
+  .contact__grid { grid-template-columns: 1fr; gap: 3rem; }
+  .contact__info { position: static; }
+}
+@media (max-width: 520px) {
+  .form-row { grid-template-columns: 1fr; }
+}

@@ -87,4 +87,7 @@ Foto's (portret + sfeer)
 Schrijfwijze: voluit "Vos Voorlichting Ondersteuning Scholing" of als "VOS"
 Status nascholingsreizen (vaste dienst of losse samenwerking?)
 
+BELANGRIJK: Gebruik GEEN emdashes in de website teksten.
+BELANGRIJK: De rechtsvorm is NIET nodig om te vermelden.
+
 Eén ding om scherp te houden tijdens het bouwen: het bedrijfsadres is gelijk aan dat van de huisartsenpraktijk. Dat is administratief prima, maar zorg dat de site nergens de indruk wekt dat je bij VOS huisartsenzorg of patiëntenzorg inkoopt — VOS is puur scholing, advies en voorlichting. (Adres van praktijk: Pr. Margrietstraat 48, 2983 EH Ridderkerk)

@@ -1,0 +1,282 @@
+/* Hero */
+.hero {
+  background: var(--green-deep);
+  padding: 8rem 0 5rem;
+}
+
+.hero__inner {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 4rem;
+  align-items: start;
+}
+
+.hero__content { max-width: 580px; }
+
+.hero__content h1 {
+  color: var(--white);
+  margin-bottom: 1.25rem;
+  line-height: 1.15;
+}
+
+.hero__lead {
+  font-size: 1.05rem;
+  color: rgba(255,255,255,0.65);
+  margin-bottom: 2.25rem;
+  line-height: 1.8;
+  font-weight: 300;
+}
+
+.hero__actions {
+  display: flex;
+  gap: 0.875rem;
+  flex-wrap: wrap;
+}
+
+/* Side panel */
+.hero__aside { padding-top: 0.5rem; }
+
+.hero__panel {
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: var(--radius);
+  padding: 1.75rem;
+  background: rgba(255,255,255,0.04);
+}
+
+.hero__panel-top {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #C49A60;
+  margin-bottom: 1.25rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.hero__panel-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+}
+.hero__panel-list li {
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.62);
+  padding: 0.4rem 0;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.hero__panel-list li::before {
+  content: '';
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: #C49A60;
+  flex-shrink: 0;
+}
+
+.hero__panel-foot {
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.32);
+  line-height: 1.55;
+  font-style: italic;
+  margin: 0;
+}
+
+/* Section title spacing */
+.home__section-title { margin-bottom: 0.85rem; }
+
+/* Diensten grid */
+.home__diensten {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.dienst-item {
+  display: flex;
+  gap: 1.25rem;
+  padding: 1.875rem;
+  text-decoration: none;
+  color: inherit;
+  background: var(--white);
+  border-right: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  transition: background 0.16s;
+}
+.dienst-item:nth-child(2n) { border-right: none; }
+.dienst-item:nth-child(n+3) { border-bottom: none; }
+.dienst-item:hover {
+  background: var(--cream);
+  text-decoration: none;
+}
+
+.dienst-item__icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--green-deep);
+  background: var(--cream-dark);
+  border-radius: var(--radius-sm);
+  flex-shrink: 0;
+}
+
+.dienst-item__body h3 {
+  font-size: 1.05rem;
+  margin-bottom: 0.4rem;
+  font-weight: 600;
+}
+.dienst-item__body p {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  margin-bottom: 0.85rem;
+  line-height: 1.65;
+}
+.dienst-item__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--brass);
+  font-family: var(--font-body);
+}
+
+/* USPs */
+.home__usps {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem 2.5rem;
+}
+
+.usp-item {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.usp-item__icon {
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255,255,255,0.08);
+  border-radius: var(--radius-sm);
+  color: #C49A60;
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+}
+
+.usp-item__title {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: rgba(255,255,255,0.9);
+  margin-bottom: 0.35rem;
+}
+.usp-item__text {
+  font-size: 0.875rem;
+  color: rgba(255,255,255,0.52);
+  line-height: 1.65;
+  margin: 0;
+  font-weight: 300;
+}
+
+/* Over section */
+.home__over {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: 5rem;
+  align-items: start;
+}
+
+.home__over-text h2 { margin-bottom: 1.25rem; }
+.home__over-text p { color: var(--text-muted); font-weight: 300; }
+.home__over-text .btn { margin-top: 0.75rem; }
+
+.home__over-aside {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.home__quote {
+  border-left: 3px solid var(--brass);
+  padding: 1.5rem 1.75rem;
+  background: var(--cream);
+  border-radius: 0 var(--radius) var(--radius) 0;
+}
+.home__quote p {
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.15rem;
+  color: var(--green-deep);
+  line-height: 1.6;
+  margin-bottom: 0.85rem;
+}
+.home__quote footer {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-family: var(--font-body);
+  font-weight: 500;
+}
+
+.home__creds {
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+}
+.home__creds h4 { margin-bottom: 0.75rem; }
+.home__creds ul {
+  list-style: none;
+  padding: 0;
+}
+.home__creds li {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  padding: 0.4rem 0;
+  border-bottom: 1px solid var(--border-light);
+  margin: 0;
+}
+.home__creds li:last-child { border-bottom: none; }
+
+/* CTA */
+.home__cta-section { text-align: center; }
+.home__cta { max-width: 580px; margin: 0 auto; }
+.home__cta h2 { color: var(--white); margin-bottom: 1rem; }
+.home__cta p { color: rgba(255,255,255,0.58); margin-bottom: 2.25rem; font-weight: 300; font-size: 1.05rem; }
+.home__cta-btns {
+  display: flex;
+  gap: 0.875rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Responsive */
+@media (max-width: 860px) {
+  .hero__inner { grid-template-columns: 1fr; gap: 2.5rem; }
+  .hero__aside { max-width: 440px; }
+  .hero { padding: 7.5rem 0 4rem; }
+  .home__over { grid-template-columns: 1fr; gap: 3rem; }
+  .home__usps { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 620px) {
+  .hero { padding: 7rem 0 3.5rem; }
+  .home__diensten { grid-template-columns: 1fr; }
+  .dienst-item { border-right: none; }
+  .dienst-item:nth-child(n+3) { border-bottom: 1px solid var(--border); }
+  .dienst-item:last-child { border-bottom: none; }
+  .home__usps { grid-template-columns: 1fr; gap: 1.5rem; }
+}

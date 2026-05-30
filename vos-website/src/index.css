@@ -1,0 +1,193 @@
+:root {
+  --green-deep: #1A3828;
+  --green-mid: #24503A;
+  --green-hover: #2D5F46;
+  --brass: #9E7340;
+  --brass-light: #B98A54;
+  --cream: #F7F3EC;
+  --cream-dark: #EDE7D8;
+  --white: #FFFFFF;
+  --text: #18181A;
+  --text-mid: #4C4740;
+  --text-muted: #7A746C;
+  --border: #D4CCB8;
+  --border-light: #EAE4D6;
+
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body: 'Source Sans 3', system-ui, sans-serif;
+
+  --radius-sm: 2px;
+  --radius: 4px;
+  --shadow-sm: 0 1px 4px rgba(26, 56, 40, 0.06);
+  --shadow-md: 0 4px 16px rgba(26, 56, 40, 0.10);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-body);
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--text);
+  background: var(--white);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+  line-height: 1.2;
+  color: var(--green-deep);
+  font-weight: 700;
+}
+
+h1 { font-size: clamp(2.2rem, 5vw, 3.2rem); }
+h2 { font-size: clamp(1.7rem, 3vw, 2.4rem); }
+h3 { font-size: clamp(1.2rem, 2vw, 1.5rem); font-weight: 600; }
+h4 {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+p { margin-bottom: 1rem; }
+p:last-child { margin-bottom: 0; }
+
+a { color: var(--brass); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+ul, ol { padding-left: 1.4rem; }
+li { margin-bottom: 0.3rem; }
+
+img { max-width: 100%; display: block; }
+
+/* Layout */
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.section { padding: 5.5rem 0; }
+.section--cream { background: var(--cream); }
+.section--cream-dark { background: var(--cream-dark); }
+.section--dark {
+  background: var(--green-deep);
+  color: var(--white);
+}
+.section--dark h2,
+.section--dark h3 { color: var(--white); }
+.section--dark p { color: rgba(255,255,255,0.72); }
+.section--dark h4 { color: rgba(255,255,255,0.42); }
+
+/* Eyebrow label */
+.label {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--brass);
+  margin-bottom: 0.75rem;
+}
+.section--dark .label { color: #C49A60; }
+
+/* Section intro text */
+.intro {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  max-width: 600px;
+  margin-bottom: 3.5rem;
+  line-height: 1.75;
+  font-weight: 300;
+}
+.section--dark .intro { color: rgba(255,255,255,0.58); }
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.7rem 1.6rem;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.18s, color 0.18s, border-color 0.18s;
+  border: 1.5px solid transparent;
+  line-height: 1.2;
+}
+.btn--brass {
+  background: var(--brass);
+  color: var(--white);
+  border-color: var(--brass);
+}
+.btn--brass:hover {
+  background: var(--brass-light);
+  border-color: var(--brass-light);
+  text-decoration: none;
+  color: var(--white);
+}
+.btn--outline-dark {
+  background: transparent;
+  color: var(--green-deep);
+  border-color: var(--green-deep);
+}
+.btn--outline-dark:hover {
+  background: var(--green-deep);
+  color: var(--white);
+  text-decoration: none;
+}
+.btn--outline-white {
+  background: transparent;
+  color: var(--white);
+  border-color: rgba(255,255,255,0.5);
+}
+.btn--outline-white:hover {
+  background: var(--white);
+  color: var(--green-deep);
+  text-decoration: none;
+  border-color: var(--white);
+}
+
+/* Divider */
+.divider {
+  border: none;
+  border-top: 1px solid var(--border-light);
+  margin: 2rem 0;
+}
+
+/* Shared page header */
+.page-header {
+  background: var(--green-deep);
+  padding: 9rem 0 4.5rem;
+}
+.page-header .label { color: #C49A60; }
+.page-header h1 {
+  color: var(--white);
+  margin-bottom: 1rem;
+}
+.page-header__sub {
+  font-size: 1.1rem;
+  color: rgba(255,255,255,0.62);
+  max-width: 580px;
+  line-height: 1.75;
+  font-weight: 300;
+}
+
+@media (max-width: 640px) {
+  .section { padding: 4rem 0; }
+  .page-header { padding: 7.5rem 0 3.5rem; }
+}

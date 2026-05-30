@@ -1,0 +1,137 @@
+.over__intro {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 5rem;
+  align-items: start;
+}
+.over__text h2 { margin-bottom: 1.25rem; }
+.over__text p { color: var(--text-muted); font-weight: 300; }
+
+.over__creds-card {
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius);
+  padding: 1.75rem;
+  position: sticky;
+  top: 84px;
+}
+.over__creds-card h4 { margin-bottom: 1.1rem; }
+
+.over__creds-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.over__creds-list li {
+  display: flex;
+  gap: 0.85rem;
+  align-items: flex-start;
+  padding: 0.8rem 0;
+  border-bottom: 1px solid var(--border-light);
+  margin: 0;
+}
+.over__creds-list li:last-child { border-bottom: none; }
+
+.over__creds-icon {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--cream-dark);
+  border-radius: var(--radius-sm);
+  color: var(--green-deep);
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+.over__creds-list strong {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 0.1rem;
+}
+.over__creds-list span {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+/* Waarden */
+.over__waarden {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+.waarde { display: flex; flex-direction: column; }
+.waarde__nr {
+  font-family: var(--font-display);
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: rgba(255,255,255,0.08);
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+.waarde__title {
+  font-size: 1.05rem;
+  color: rgba(255,255,255,0.9);
+  margin-bottom: 0.6rem;
+  font-weight: 600;
+}
+.waarde__text {
+  font-size: 0.875rem;
+  color: rgba(255,255,255,0.5);
+  line-height: 1.7;
+  font-weight: 300;
+  margin: 0;
+}
+
+/* Betrokkenheid */
+.over__betrokken {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 4rem;
+  align-items: start;
+}
+.over__betrokken > div:first-child h2 { margin-bottom: 1rem; }
+.over__betrokken > div:first-child p { color: var(--text-muted); font-weight: 300; }
+
+.over__bedrijf-card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.75rem;
+}
+.over__bedrijf-card h3 { margin-bottom: 1.25rem; font-size: 1.1rem; }
+
+.over__table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+.over__table th {
+  text-align: left;
+  font-family: var(--font-body);
+  font-weight: 500;
+  color: var(--text-muted);
+  padding: 0.55rem 1rem 0.55rem 0;
+  border-bottom: 1px solid var(--border-light);
+  white-space: nowrap;
+  vertical-align: top;
+}
+.over__table td {
+  padding: 0.55rem 0;
+  color: var(--text);
+  border-bottom: 1px solid var(--border-light);
+}
+.over__table tr:last-child th,
+.over__table tr:last-child td { border-bottom: none; }
+
+@media (max-width: 860px) {
+  .over__intro, .over__betrokken {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+  .over__creds-card { position: static; }
+  .over__waarden { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 540px) {
+  .over__waarden { grid-template-columns: 1fr; }
+}

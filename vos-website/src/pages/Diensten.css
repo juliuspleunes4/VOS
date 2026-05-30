@@ -1,0 +1,154 @@
+.diensten-nav {
+  background: var(--white);
+  border-bottom: 1px solid var(--border-light);
+  position: sticky;
+  top: 64px;
+  z-index: 50;
+}
+.diensten-nav__row {
+  display: flex;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+.diensten-nav__row::-webkit-scrollbar { display: none; }
+
+.diensten-nav__item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.8rem 1rem;
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  text-decoration: none;
+  white-space: nowrap;
+  border-bottom: 2px solid transparent;
+  transition: color 0.14s, border-color 0.14s;
+  font-family: var(--font-body);
+}
+.diensten-nav__item:hover {
+  color: var(--green-deep);
+  border-bottom-color: var(--brass);
+  text-decoration: none;
+}
+
+/* Dienst section layout */
+.dienst-sec__head {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+  margin-bottom: 2.5rem;
+}
+.dienst-sec__icon-wrap {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--cream-dark);
+  border-radius: var(--radius);
+  color: var(--green-deep);
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+}
+.dienst-sec__title { margin-bottom: 0.5rem; }
+.dienst-sec__intro {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  font-weight: 300;
+  max-width: 620px;
+  margin: 0;
+  line-height: 1.75;
+}
+
+.dienst-sec__body {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 3.5rem;
+  align-items: start;
+}
+.dienst-sec__tekst p {
+  color: var(--text-muted);
+  font-weight: 300;
+  line-height: 1.8;
+}
+.dienst-sec__tekst p:not(:last-child) { margin-bottom: 1rem; }
+
+/* Meta aside */
+.dienst-sec__punten {
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  margin-bottom: 1.25rem;
+  background: var(--white);
+}
+.dienst-sec__punten h4 { margin-bottom: 0.85rem; }
+.dienst-sec__punten ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.dienst-sec__punten li {
+  display: flex;
+  gap: 0.6rem;
+  align-items: baseline;
+  font-size: 0.875rem;
+  color: var(--text-mid);
+  padding: 0.4rem 0;
+  border-bottom: 1px solid var(--border-light);
+  margin: 0;
+}
+.dienst-sec__punten li:last-child { border-bottom: none; }
+.dienst-sec__check {
+  color: var(--brass);
+  flex-shrink: 0;
+  position: relative;
+  top: 1px;
+}
+
+.dienst-sec__dg {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  margin-bottom: 1rem;
+}
+.dienst-sec__dg-label {
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  font-family: var(--font-body);
+}
+.dienst-sec__dg-val {
+  font-size: 0.875rem;
+  color: var(--green-deep);
+  font-weight: 500;
+}
+
+/* Highlight badge */
+.dienst-sec--highlight { position: relative; }
+.dienst-sec--highlight::after {
+  content: 'Kernservice';
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background: var(--brass);
+  color: var(--white);
+  padding: 0.2rem 0.6rem;
+  border-radius: 2px;
+  font-family: var(--font-body);
+}
+
+@media (max-width: 860px) {
+  .dienst-sec__body { grid-template-columns: 1fr; gap: 2rem; }
+}
+@media (max-width: 560px) {
+  .dienst-sec__head { flex-direction: column; gap: 0.75rem; }
+  .dienst-sec--highlight::after { top: 1rem; right: 1rem; }
+}
