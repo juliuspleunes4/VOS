@@ -18,63 +18,68 @@ export default function OverVOS() {
 
       {/* Intro */}
       <section className="section">
-        <div className="container over__intro">
-          <div className="over__text">
-            <span className="label">Wie is Jeanette</span>
-            <h2>Kaderarts, docent en praktijkkenner.</h2>
-            <p>
-              Jeanette Caljouw-Vos is kaderarts hart- en vaatziekten, ingeschreven bij de CHBB
-              (Commissie Huisartsgeneeskunde Bijscholing en Beoordeling). Ze heeft de NHG-kaderopleiding
-              hart- en vaatziekten gevolgd en verbindt daarmee specialistische diepgang aan de
-              dagelijkse werkelijkheid van de huisartsengeneeskunde.
-            </p>
-            <p>
-              Als huisarts, actief sinds 1999, weet ze wat er in de spreekkamer werkelijk speelt.
-              Die praktijkervaring vormt de basis van alles wat VOS doet: scholing die herkenbaar is,
-              adviezen die uitvoerbaar zijn, en beoordelingen die aansluiten bij de context van uw praktijk.
-            </p>
-            <p>
-              Jarenlang was ze docent en projectleider bij Leerpunt Koel, waar ze haar didactische
-              vaardigheden verder ontwikkelde. In 2020 richtte ze VOS op als zelfstandige, om
-              maatgericht te kunnen werken met individuele praktijken, zorggroepen en
-              welzijnsorganisaties.
-            </p>
-          </div>
-          <aside className="over__aside">
-            <div className="over__creds-card">
-              <h4>Registraties &amp; achtergrond</h4>
-              <ul className="over__creds-list">
-                <li>
-                  <div className="over__creds-icon"><Award size={15} strokeWidth={1.5} /></div>
-                  <div>
-                    <strong>Kaderarts hart- en vaatziekten</strong>
-                    <span>Ingeschreven bij de CHBB</span>
-                  </div>
-                </li>
-                <li>
-                  <div className="over__creds-icon"><BookOpen size={15} strokeWidth={1.5} /></div>
-                  <div>
-                    <strong>NHG-kaderopleiding</strong>
-                    <span>Hart- en vaatziekten</span>
-                  </div>
-                </li>
-                <li>
-                  <div className="over__creds-icon"><Stethoscope size={15} strokeWidth={1.5} /></div>
-                  <div>
-                    <strong>Huisarts</strong>
-                    <span>Actief sinds 1999</span>
-                  </div>
-                </li>
-                <li>
-                  <div className="over__creds-icon"><Users size={15} strokeWidth={1.5} /></div>
-                  <div>
-                    <strong>Docent &amp; projectleider</strong>
-                    <span>Voormalig bij Leerpunt Koel</span>
-                  </div>
-                </li>
-              </ul>
+        <div className="container">
+          <div className="over__intro">
+            <div className="over__text">
+              <span className="label">Wie is Jeanette</span>
+              <h2>Kaderarts, docent en praktijkkenner.</h2>
+              <p>
+                Jeanette Caljouw-Vos is kaderarts hart- en vaatziekten, ingeschreven bij de CHBB
+                (Commissie Huisartsgeneeskunde Bijscholing en Beoordeling). Ze heeft de NHG-kaderopleiding
+                hart- en vaatziekten gevolgd en verbindt daarmee specialistische diepgang aan de
+                dagelijkse werkelijkheid van de huisartsengeneeskunde.
+              </p>
+              <p>
+                Als huisarts, actief sinds 1999, weet ze wat er in de spreekkamer werkelijk speelt.
+                Die praktijkervaring vormt de basis van alles wat VOS doet: scholing die herkenbaar is,
+                adviezen die uitvoerbaar zijn, en beoordelingen die aansluiten bij de context van uw praktijk.
+              </p>
+              <p>
+                Jarenlang was ze docent en projectleider bij Leerpunt Koel, waar ze haar didactische
+                vaardigheden verder ontwikkelde. In 2020 richtte ze VOS op als zelfstandige, om
+                maatgericht te kunnen werken met individuele praktijken, zorggroepen en
+                welzijnsorganisaties.
+              </p>
             </div>
-          </aside>
+            <aside className="over__aside">
+              <div className="over__portrait">
+                <img src="/images/jeanette.jpg" alt="Jeanette Caljouw-Vos" />
+              </div>
+            </aside>
+          </div>
+          <div className="over__creds-card">
+            <h4>Registraties &amp; achtergrond</h4>
+            <ul className="over__creds-list">
+              <li>
+                <div className="over__creds-icon"><Award size={15} strokeWidth={1.5} /></div>
+                <div>
+                  <strong>Kaderarts hart- en vaatziekten</strong>
+                  <span>Ingeschreven bij de CHBB</span>
+                </div>
+              </li>
+              <li>
+                <div className="over__creds-icon"><BookOpen size={15} strokeWidth={1.5} /></div>
+                <div>
+                  <strong>NHG-kaderopleiding</strong>
+                  <span>Hart- en vaatziekten</span>
+                </div>
+              </li>
+              <li>
+                <div className="over__creds-icon"><Stethoscope size={15} strokeWidth={1.5} /></div>
+                <div>
+                  <strong>Huisarts</strong>
+                  <span>Actief sinds 1999</span>
+                </div>
+              </li>
+              <li>
+                <div className="over__creds-icon"><Users size={15} strokeWidth={1.5} /></div>
+                <div>
+                  <strong>Docent &amp; projectleider</strong>
+                  <span>Voormalig bij Leerpunt Koel</span>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 

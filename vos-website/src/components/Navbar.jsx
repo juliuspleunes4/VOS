@@ -34,7 +34,7 @@ export default function Navbar() {
         </button>
 
         <nav id="main-nav" className={`navbar__nav${menuOpen ? ' navbar__nav--open' : ''}`} aria-label="Hoofdnavigatie">
-          <NavLink to="/" end onClick={closeMenu}>Home</NavLink>
+          <NavLink to="/" end onClick={closeMenu}>Thuis</NavLink>
           <NavLink to="/over-vos" onClick={closeMenu}>Over VOS</NavLink>
           <NavLink to="/diensten" onClick={closeMenu}>Diensten</NavLink>
           <NavLink to="/contact" onClick={closeMenu} className="btn btn--primary navbar__cta">

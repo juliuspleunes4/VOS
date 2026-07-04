@@ -47,6 +47,7 @@ export default function Home() {
 
       {/* Hero */}
       <section className="hero">
+        <img src="/images/vos.jpg" alt="" aria-hidden="true" className="hero__fox" />
         <div className="container hero__inner">
           <div className="hero__content">
             <span className="label">Eerstelijns gezondheidszorg</span>
