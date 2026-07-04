@@ -38,8 +38,9 @@
 /* Dienst section layout */
 .dienst-sec__head {
   display: flex;
-  gap: 1.5rem;
+  flex-direction: column;
   align-items: flex-start;
+  gap: 1rem;
   margin-bottom: 2.5rem;
 }
 .dienst-sec__icon-wrap {
@@ -52,7 +53,24 @@
   border-radius: var(--radius);
   color: var(--green-deep);
   flex-shrink: 0;
-  margin-top: 0.2rem;
+}
+.dienst-sec__label-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+.dienst-sec__label-row .label { margin-bottom: 0; }
+.dienst-sec__badge {
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background: var(--brass);
+  color: var(--white);
+  padding: 0.2rem 0.6rem;
+  border-radius: 2px;
+  font-family: var(--font-body);
 }
 .dienst-sec__title { margin-bottom: 0.5rem; }
 .dienst-sec__intro {
@@ -129,28 +147,6 @@
   font-weight: 500;
 }
 
-/* Highlight badge */
-.dienst-sec--highlight { position: relative; }
-.dienst-sec--highlight::after {
-  content: 'Kernservice';
-  position: absolute;
-  top: 2rem;
-  right: 2rem;
-  font-size: 0.68rem;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  background: var(--brass);
-  color: var(--white);
-  padding: 0.2rem 0.6rem;
-  border-radius: 2px;
-  font-family: var(--font-body);
-}
-
 @media (max-width: 860px) {
   .dienst-sec__body { grid-template-columns: 1fr; gap: 2rem; }
-}
-@media (max-width: 560px) {
-  .dienst-sec__head { flex-direction: column; gap: 0.75rem; }
-  .dienst-sec--highlight::after { top: 1rem; right: 1rem; }
 }

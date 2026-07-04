@@ -158,23 +158,27 @@ export default function Diensten() {
         <section
           key={d.id}
           id={d.id}
-          className={`section dienst-sec${i % 2 === 1 ? ' section--cream' : ''}${d.highlight ? ' dienst-sec--highlight' : ''}`}
+          className={`section dienst-sec${i % 2 === 1 ? ' section--cream' : ''}`}
         >
           <div className="container">
-            <div className="dienst-sec__head">
-              <div className="dienst-sec__icon-wrap">
-                <d.Icon size={22} strokeWidth={1.5} />
-              </div>
-              <div>
-                <span className="label">{d.label}</span>
-                <h2 className="dienst-sec__title">{d.title}</h2>
-                <p className="dienst-sec__intro">{d.intro}</p>
-              </div>
-            </div>
-
             <div className="dienst-sec__body">
-              <div className="dienst-sec__tekst">
-                {d.body.map((p, j) => <p key={j}>{p}</p>)}
+              <div className="dienst-sec__main">
+                <div className="dienst-sec__head">
+                  <div className="dienst-sec__icon-wrap">
+                    <d.Icon size={22} strokeWidth={1.5} />
+                  </div>
+                  <div>
+                    <div className="dienst-sec__label-row">
+                      <span className="label">{d.label}</span>
+                      {d.highlight && <span className="dienst-sec__badge">Kernservice</span>}
+                    </div>
+                    <h2 className="dienst-sec__title">{d.title}</h2>
+                    <p className="dienst-sec__intro">{d.intro}</p>
+                  </div>
+                </div>
+                <div className="dienst-sec__tekst">
+                  {d.body.map((p, j) => <p key={j}>{p}</p>)}
+                </div>
               </div>
               <aside className="dienst-sec__meta">
                 <div className="dienst-sec__punten">
