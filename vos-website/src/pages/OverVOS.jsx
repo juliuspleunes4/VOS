@@ -121,17 +121,8 @@ export default function OverVOS() {
               POH werkt.
             </p>
           </div>
-          <div className="over__bedrijf-card">
-            <h3>VOS</h3>
-            <table className="over__table">
-              <tbody>
-                <tr><th>Handelsnaam</th><td>Vos Voorlichting Ondersteuning Scholing</td></tr>
-                <tr><th>KVK-nummer</th><td>76737802</td></tr>
-                <tr><th>Opgericht</th><td>2020</td></tr>
-                <tr><th>Vestigingsplaats</th><td>Ridderkerk</td></tr>
-                <tr><th>Specialisatie</th><td>Hart- en vaatziekten / CVRM</td></tr>
-              </tbody>
-            </table>
+          <div className="over__portrait over__betrokken-img">
+            <img src="/images/bag.jpg" alt="Dokterstas van Jeanette Caljouw-Vos" />
           </div>
         </div>
       </section>
