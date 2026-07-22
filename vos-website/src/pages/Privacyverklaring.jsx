@@ -16,7 +16,7 @@ export default function Privacyverklaring() {
       <section className="section">
         <div className="container">
           <div className="legal__body">
-            <span className="legal__meta">Laatst bijgewerkt: mei 2025</span>
+            <span className="legal__meta">Laatst bijgewerkt: juli 2026</span>
 
             <p>
               Vos Voorlichting Ondersteuning Scholing (hierna: VOS), gevestigd te Ridderkerk,

@@ -18,7 +18,7 @@ export default function Klachtenregeling() {
       <section className="section">
         <div className="container">
           <div className="legal__body">
-            <span className="legal__meta">Vastgesteld: januari 2021 &nbsp;·&nbsp; Laatst bijgewerkt: mei 2025</span>
+            <span className="legal__meta">Vastgesteld: januari 2021 &nbsp;·&nbsp; Laatst bijgewerkt: juli 2026</span>
 
             <p>
               VOS hecht grote waarde aan de kwaliteit van haar dienstverlening. Als u desondanks
