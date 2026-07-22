@@ -1,6 +1,6 @@
 /* Hero */
 .hero {
-  background: var(--green-deep);
+  background: var(--navy-deep);
   padding: 8rem 0 5rem;
   position: relative;
   overflow: hidden;
@@ -143,7 +143,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--green-deep);
+  color: var(--navy-deep);
   background: var(--cream-dark);
   border-radius: var(--radius-sm);
   flex-shrink: 0;
@@ -240,7 +240,7 @@
   font-style: italic;
   font-size: 1.1rem;
   font-weight: 500;
-  color: var(--green-deep);
+  color: var(--navy-deep);
   line-height: 1.65;
   margin-bottom: 0.85rem;
 }

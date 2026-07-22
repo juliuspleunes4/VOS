@@ -55,8 +55,8 @@
 .form-group select:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: var(--green-mid);
-  box-shadow: 0 0 0 3px rgba(36, 80, 58, 0.1);
+  border-color: var(--navy-mid);
+  box-shadow: 0 0 0 3px rgba(31, 69, 104, 0.1);
 }
 .form-group input::placeholder,
 .form-group textarea::placeholder { color: #bbb; }
@@ -79,15 +79,15 @@
 
 /* Success */
 .contact__ok {
-  border: 1px solid #b8d9c4;
-  background: #f0f8f4;
+  border: 1px solid #b9cee2;
+  background: #eef4f9;
   border-radius: var(--radius);
   padding: 2.5rem;
   text-align: center;
 }
 .contact__ok-mark {
   width: 44px; height: 44px;
-  background: var(--green-mid);
+  background: var(--navy-mid);
   color: var(--white);
   border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
@@ -117,7 +117,7 @@
   display: flex; align-items: center; justify-content: center;
   background: var(--cream-dark);
   border-radius: var(--radius-sm);
-  color: var(--green-deep);
+  color: var(--navy-deep);
   flex-shrink: 0;
 }
 .contact__info-label {

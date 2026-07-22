@@ -30,7 +30,7 @@
   cursor: pointer;
 }
 .diensten-nav__item:hover {
-  color: var(--green-deep);
+  color: var(--navy-deep);
   border-bottom-color: var(--brass);
   text-decoration: none;
 }
@@ -51,7 +51,7 @@
   justify-content: center;
   background: var(--cream-dark);
   border-radius: var(--radius);
-  color: var(--green-deep);
+  color: var(--navy-deep);
   flex-shrink: 0;
 }
 .dienst-sec__label-row {
@@ -143,7 +143,7 @@
 }
 .dienst-sec__dg-val {
   font-size: 0.875rem;
-  color: var(--green-deep);
+  color: var(--navy-deep);
   font-weight: 500;
 }
 

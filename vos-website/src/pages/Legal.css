@@ -6,7 +6,7 @@
   font-size: clamp(1.2rem, 2vw, 1.45rem);
   margin-top: 2.75rem;
   margin-bottom: 0.65rem;
-  color: var(--green-deep);
+  color: var(--navy-deep);
 }
 
 .legal__body h3 {
