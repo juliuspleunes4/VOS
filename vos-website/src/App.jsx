@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import './App.css';
 import { useEffect } from 'react';
+import { preloadImages } from './utils/preloadImages';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -19,6 +20,15 @@ function ScrollToTop() {
 }
 
 function App() {
+  useEffect(() => {
+    if ('requestIdleCallback' in window) {
+      const id = window.requestIdleCallback(preloadImages);
+      return () => window.cancelIdleCallback(id);
+    }
+    const id = setTimeout(preloadImages, 200);
+    return () => clearTimeout(id);
+  }, []);
+
   return (
     <BrowserRouter>
       <ScrollToTop />
